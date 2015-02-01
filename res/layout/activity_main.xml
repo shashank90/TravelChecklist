@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+    android:focusable="true" android:focusableInTouchMode="true"
+    android:layout_width="0px" android:layout_height="0px"/>
+    
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15"
+        android:textSize="32sp"
+        android:text="@string/travel_checklist" />
+
+    <CheckBox
+        android:id="@+id/checkbox_ticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15"
+        android:onClick="onCheckboxClicked"
+        
+        android:textSize="24sp"
+        android:text="@string/ticket" />
+
+    <CheckBox
+        android:id="@+id/checkbox_wallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.14"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/wallet"
+        android:textSize="24sp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15"
+        android:textSize="24sp"
+        android:onClick="onCheckboxClicked"
+        android:singleLine="true"
+        android:text="@string/mobile" />
+
+    <CheckBox
+        android:id="@+id/checkbox_luggage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15"
+        android:textSize="24sp"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/luggage" />
+
+    <CheckBox
+        android:id="@+id/checkbox_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15"
+        android:textSize="24sp"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/camera" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Note"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit_message"
+            android:layout_width="0dp"
+            android:layout_height="101dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/Notes"
+            
+            android:inputType="textMultiLine" 
+			>
+            
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="80dp"
+            android:text="@string/save" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"
+            android:text="@string/clear" />
+    </LinearLayout>
+
+</LinearLayout>
